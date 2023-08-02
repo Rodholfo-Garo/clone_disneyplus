@@ -1,0 +1,62 @@
+@use 'hero';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+$corDeFundo:#04140e;
+$corTextoPrincipal:silver;
+$corTextoSecundario:#f9f9f9;
+
+body{
+    background-color: $corDeFundo;
+}
+
+@mixin text($fontSize:16px){
+    font-size:$fontSize;
+    line-height:$fontSize + 10px;
+    color: $corTextoPrincipal;
+}
+
+/*Mixin para o Titulo*/
+@mixin title($fontSize:40px){
+    @include text($fontSize);
+    color: $corTextoSecundario;
+}
+
+/*Classe para as fontes*/
+
+.text--big{
+    @include text(18px);
+}
+
+.text{/*Como não vamos alterar o argunto, o font-size vai 16px, não precisa por os parenteses*/
+    @include text;
+}
+
+.text--small{
+    @include text(12px);
+}
+
+.link-text{
+    @include text(18px);
+    color:$corTextoSecundario;
+    text-decoration: underline;
+}
+
+/*Classes para os titulos*/
+.title--big{
+    @include title(44px);
+
+}
+
+.title {
+    @include title;
+}
+
+.title--small{
+    @include title(28px);
+}
