@@ -1,3 +1,6 @@
+Contruir com base na metodologia BEM
+Pasta assets - É uma convenção ter uma pasta desta para os arquivos que vamos usar no site, além de IDST e SRC.
+
 1ª Montar estrutura Basica
 
  - Instalar node
@@ -20,3 +23,4 @@
     - Criar mixin
     - Criar classe para o texto
 - Construir Hero
+- Importar Fonte - Importar o arquivo no Projetp
