@@ -33,5 +33,9 @@ function images(){
 }
 
 exports.default = gulp.parallel(styles, images);
+
+
 // Criar função para observar o Gulp
-exports.watch = ('./src/styles/*.scss', gulp.parallel(styles))
+exports.watch = function(){
+    gulp.watch('./src/styles/*.scss', gulp.parallel(styles))
+}
