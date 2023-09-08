@@ -9,6 +9,10 @@
         display: none;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
+
+        @media (max-width:768px){
+            grid-template-columns: 1fr 1fr;
+        }
         
         &--is-active{
             display: grid;
@@ -26,6 +30,14 @@
         display: flex;
         justify-content: center;
 
+        @media(max-width:768px){
+            //Esta propriedade faz o texto ficar em ma linha só, forçando o comportamento de ter tudo em uma linha queran o scroll
+
+            white-space: nowrap;
+            overflow-x: scroll;
+            padding-left: 18px;
+        }
+
         &__button{
             color: variaveis.$corTextoSecundario;
             font-size: 20px;
@@ -42,6 +54,10 @@
 
             &--is-active{
                 border-color: variaveis.$corTextoSecundario;
+
+                @media(max-width:768px){
+                    font-size: 16px;
+                }
             }
         }
     }

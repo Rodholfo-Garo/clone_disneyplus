@@ -23,6 +23,7 @@ Pasta assets - É uma convenção ter uma pasta desta para os arquivos que vamos
     - Criar mixin
     - Criar classe para o texto
 - Construir Hero
+-criar past assets
 - Importar Fonte - Importar o arquivo no Projetp
 
 3ªCriar lista
@@ -46,3 +47,17 @@ Pasta assets - É uma convenção ter uma pasta desta para os arquivos que vamos
  - Ajusjtar Botoes
  - Destacar plano do centro com o pseudo seletor
  - Ajustar Imagens
+
+ 6ª Criar seção "Assista do seu jeito"
+  - Aplicar classe nos textos
+  - Criar Grids
+
+  7ªCriar seção "Dispositivos Disponiveis"
+   - A imgem de fundo é um background, temos que usar o position relative
+   - Criar um modificador para o bloco ( )
+
+   8ª Criar FAQ
+
+   9ªCriar rodapé
+
+   9ª Trabalhar responsividade
